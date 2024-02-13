@@ -1,16 +1,39 @@
 # carselona_assignment
 
-A new Flutter project.
 
-## Getting Started
+## Problem statement
 
-This project is a starting point for a Flutter application.
+```
+  *  Build a clone of given screenshot
+```
 
-A few resources to get you started if this is your first Flutter project:
+![carselona_assignment](https://github.com/ajayg51/carselona_assignment/assets/60037249/b2b7e965-3e50-41ea-b8dc-ce8806bfe99a)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##  Demo video
+
+https://github.com/ajayg51/carselona_assignment/assets/60037249/44c120da-9a7a-48b0-9fd4-a071541664fb
+
+##  Features
+```
+  * Splash screen
+  * Graph plot using FlChart
+  * Slivers to handle infinite data in scroll view
+```
+
+
+##  Tech stack
+
+```
+  * Dart
+  * Flutter
+```
+
+
+##  Installation
+<a href="">Click here to download apk</a>
+
+
+
+
+
