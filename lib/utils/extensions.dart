@@ -23,4 +23,8 @@ extension PadExt on Widget {
         ),
         child: this,
       );
+
+  Widget get toSliverBox {
+    return SliverToBoxAdapter(child: this);
+  }
 }

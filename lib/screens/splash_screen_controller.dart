@@ -5,7 +5,7 @@ class SplashScreenController extends GetxController {
   @override
   void onReady() {
     super.onReady();
-    Future.delayed(
+     Future.delayed(
       const Duration(seconds: 3),
       () {
         Get.off(() => HomeScreen());

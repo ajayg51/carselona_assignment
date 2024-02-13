@@ -8,7 +8,9 @@ import 'package:get/get.dart';
 
 class SplashScreen extends StatelessWidget {
   SplashScreen({super.key});
+  
   final controller = Get.put(SplashScreenController());
+
   @override
   Widget build(BuildContext context) {
     return CommonScaffold(
@@ -83,9 +85,10 @@ class _AnimatedLogoState extends State<AnimatedLogo>
           ),
           12.verticalSpace,
           Text(
-            "Catch me if you can!",
+            "Friends of your car",
             style: Get.textTheme.bodyLarge?.copyWith(
               fontSize: 24,
+              color: Colors.white,
             ),
           ),
         ],

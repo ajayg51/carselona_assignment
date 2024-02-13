@@ -30,13 +30,14 @@ class CommonGradient extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.bottomLeft,
           end: Alignment.topRight,
           colors: [
             Colors.black,
-            Color(0xff6080AF),
+            Colors.black.withOpacity(0.7),
+            Colors.grey.withOpacity(0.7),
           ],
         ),
       ),
