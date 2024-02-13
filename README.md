@@ -31,7 +31,7 @@ https://github.com/ajayg51/carselona_assignment/assets/60037249/44c120da-9a7a-48
 
 
 ##  Installation
-<a href="">Click here to download apk</a>
+<a href="https://github.com/ajayg51/carselona_assignment/raw/main/app-contents/app-release.apk">Click here to download apk</a>
 
 
 
