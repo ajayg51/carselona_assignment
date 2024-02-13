@@ -50,8 +50,8 @@ class HomeScreen extends StatelessWidget {
                     ).padSymmetric(horizontalPad: 12);
                   } else if (data == null) {
                     return buildCommonContainer(
-                      child: Text("Data not found $error").padAll(value: 12),
-                    );
+                      child: const Text("Data not found").padAll(value: 12),
+                    ).padSymmetric(horizontalPad: 12);
                   }
                   return Expanded(child: buildDashboard(data));
                 }),
