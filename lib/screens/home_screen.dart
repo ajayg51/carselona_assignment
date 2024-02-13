@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: Get.textTheme.bodyLarge?.copyWith(
-              fontSize: 32,
+              fontSize: 24,
               fontWeight: FontWeight.w700,
               color: Colors.white,
             ),
@@ -113,7 +113,7 @@ class HomeScreen extends StatelessWidget {
             Text(
               DateFormat("d MMM yy").format(DateTime.now()),
               style: Get.textTheme.bodyLarge?.copyWith(
-                fontSize: 24,
+                fontSize: 16,
                 color: Colors.white,
               ),
             ),
@@ -128,26 +128,25 @@ class HomeScreen extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Expanded(
-            flex: 2,
             child: Column(
-              children: [
-                buildActvInactvCard(data),
-                6.verticalSpace,
-                buildThisMonthOrTodayCard(
-                  data: data,
-                  graphType: GraphType.thisMonth,
-                  label: "This month",
-                  count: data.thisMonth?.totalCount.toString() ?? "",
-                ),
-                6.verticalSpace,
-                buildThisMonthOrTodayCard(
-                  data: data,
-                  graphType: GraphType.today,
-                  label: "Today",
-                  count: data.today?.totalCount.toString() ?? "",
-                ),
-              ],
-            )),
+          children: [
+            buildActvInactvCard(data),
+            6.verticalSpace,
+            buildThisMonthOrTodayCard(
+              data: data,
+              graphType: GraphType.thisMonth,
+              label: "This month",
+              count: data.thisMonth?.totalCount.toString() ?? "",
+            ),
+            6.verticalSpace,
+            buildThisMonthOrTodayCard(
+              data: data,
+              graphType: GraphType.today,
+              label: "Today",
+              count: data.today?.totalCount.toString() ?? "",
+            ),
+          ],
+        )),
         12.horizontalSpace,
         Expanded(child: buildProgressByMonthCard(data)),
       ],
@@ -215,7 +214,7 @@ class HomeScreen extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: Get.textTheme.bodyLarge?.copyWith(
-            fontSize: 16,
+            fontSize: 14,
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -225,7 +224,7 @@ class HomeScreen extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: Get.textTheme.bodyLarge?.copyWith(
-            fontSize: 24,
+            fontSize: 12,
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -272,7 +271,7 @@ class HomeScreen extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: Get.textTheme.bodyLarge?.copyWith(
-                        fontSize: 16,
+                        fontSize: 14,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -282,7 +281,7 @@ class HomeScreen extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: Get.textTheme.bodyLarge?.copyWith(
-                        fontSize: 24,
+                        fontSize: 12,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -317,7 +316,7 @@ class HomeScreen extends StatelessWidget {
               Expanded(
                 child: Text(
                   "Progress by month",
-                  maxLines: 1,
+                  maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: Get.textTheme.bodyLarge?.copyWith(
                     fontSize: 14,
@@ -327,7 +326,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
-          35.verticalSpace,
+          25.verticalSpace,
           ...list.map(
             (item) => Column(
               children: [
@@ -339,12 +338,12 @@ class HomeScreen extends StatelessWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: Get.textTheme.bodyLarge?.copyWith(
-                          fontSize: 15,
+                          fontSize: 12,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
                     ),
-                    12.horizontalSpace,
+                    6.horizontalSpace,
                     Flexible(
                       child: Container(
                         height: 15,
@@ -355,14 +354,14 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    12.horizontalSpace,
+                    6.horizontalSpace,
                     Flexible(
                       child: Text(
                         item.value.toString(),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: Get.textTheme.bodyLarge?.copyWith(
-                          fontSize: 15,
+                          fontSize: 12,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -423,11 +422,11 @@ class HomeScreen extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: Get.textTheme.bodyLarge?.copyWith(
-                    fontSize: 20,
+                    fontSize: 12,
                   ),
                 ),
               ),
-              12.horizontalSpace,
+              6.horizontalSpace,
               Flexible(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -438,7 +437,7 @@ class HomeScreen extends StatelessWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: Get.textTheme.bodyLarge?.copyWith(
-                          fontSize: 18,
+                          fontSize: 12,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
