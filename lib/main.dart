@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 
-// Always check common_layout_setup_kit
-// ref id in yaml file before running this file
+// common_layout_setup_kit
+// ref ID same as common_layout_setup_kit github commit ID
 
 void main() {
   runApp(const MyApp());

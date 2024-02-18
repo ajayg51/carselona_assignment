@@ -44,7 +44,7 @@ dependencies:
   common_layout_setup_kit:
     git:  
       url:  https://github.com/ajayg51/common_layout_setup_kit.git
-      ref:  8c687d3  
+      ref:  4ff0060  #  same as CLS Kit commit ID
 
 dev_dependencies:
   flutter_test:
