@@ -2,24 +2,32 @@ import 'package:carselona_assignment/models/dashboard_response.dart';
 import 'package:carselona_assignment/screens/home_screen_controller.dart';
 import 'package:carselona_assignment/screens/line_graph.dart';
 import 'package:carselona_assignment/utils/assets.dart';
-import 'package:carselona_assignment/utils/common_appbar.dart';
-import 'package:carselona_assignment/utils/common_scaffold.dart';
 import 'package:carselona_assignment/utils/enums.dart';
 import 'package:carselona_assignment/utils/extensions.dart';
+import 'package:common_layout_setup_kit/utils/common_appbar.dart';
+import 'package:common_layout_setup_kit/utils/common_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
+  HomeScreen({
+    super.key,
+    required this.gradientColorList,
+    required this.bannerAssetPath,
+  });
+
+  final List<Color> gradientColorList;
+  final String bannerAssetPath;
 
   final controller = Get.put(HomeScreenController());
   @override
   Widget build(BuildContext context) {
     return CommonScaffold(
+      gradientColorList: gradientColorList,
       child: Column(
         children: [
-          const CommonAppbar(),
+          CommonAppbar(bannerAssetPath: bannerAssetPath),
           12.verticalSpace,
           Expanded(
             child: Column(
